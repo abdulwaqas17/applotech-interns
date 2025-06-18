@@ -1,6 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Header from "@/components/header/Header";
+import Header from "@/components/commons/header/Header";
 // import TopNotification from "@/components/header/TopNotification";
 // import Navbar from "@/components/header/Navbar";
 

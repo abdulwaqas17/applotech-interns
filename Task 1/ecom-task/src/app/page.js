@@ -18,7 +18,7 @@ export default function Home() {
       <FeaturedProductsSection/>
        <div className="p-8">
         <h2 className="text-2xl font-bold mt-8">Explore Our Products</h2>
-        <p className="mt-4">This is where your product listings would go...</p>
+        <p className="mt-4">This is where your product listings would go.</p>
       </div>
       <TopFooter/>
       <MidFooter/>
