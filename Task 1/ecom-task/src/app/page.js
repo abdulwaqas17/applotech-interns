@@ -5,13 +5,15 @@ import CategoryGrid from "@/components/home/category/CategoryGrid";
 import FeaturedProductsDetail from "@/components/home/featured-products/FeaturedProductsDetail";
 import FeaturedProductsSection from "@/components/home/featured-products/FeaturedProductsSection";
 import ServiceBoxes from "@/components/home/service/ServiceBoxes";
+import HeroSection from "@/components/home/slider/HeroSection";
 import HeroSlider from "@/components/home/slider/HeroSlider";
 
 
 export default function Home() {
   return (
     <div>
-      <HeroSlider/>
+      {/* <HeroSlider/> */}
+      <HeroSection/>
       <ServiceBoxes/>
       <CategoryGrid/>
       <FeaturedProductsDetail/>
