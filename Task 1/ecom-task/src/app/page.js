@@ -1,3 +1,4 @@
+'use client'
 import BottomFooter from "@/components/commons/footer/BottomFooter";
 import MidFooter from "@/components/commons/footer/MidFooter";
 import TopFooter from "@/components/commons/footer/TopFooter";
@@ -7,13 +8,15 @@ import FeaturedProductsSection from "@/components/home/featured-products/Feature
 import ServiceBoxes from "@/components/home/service/ServiceBoxes";
 import HeroSection from "@/components/home/slider/HeroSection";
 import HeroSlider from "@/components/home/slider/HeroSlider";
+import ProductsSlider from "@/components/products/slider/ProductsSlider";
 
 
 export default function Home() {
   return (
     <div>
       {/* <HeroSlider/> */}
-      <HeroSection/>
+      {/* <HeroSection/> */}
+      <ProductsSlider/>
       <ServiceBoxes/>
       <CategoryGrid/>
       <FeaturedProductsDetail/>
