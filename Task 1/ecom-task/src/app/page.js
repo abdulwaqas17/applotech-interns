@@ -5,6 +5,7 @@ import TopFooter from "@/components/commons/footer/TopFooter";
 import CategoryGrid from "@/components/home/category/CategoryGrid";
 import FeaturedProductsDetail from "@/components/home/featured-products/FeaturedProductsDetail";
 import FeaturedProductsSection from "@/components/home/featured-products/FeaturedProductsSection";
+import LRWomen from "@/components/home/LR-img-text/LRWomen";
 import ServiceBoxes from "@/components/home/service/ServiceBoxes";
 import HeroSection from "@/components/home/slider/HeroSection";
 import HeroSlider from "@/components/home/slider/HeroSlider";
@@ -16,7 +17,8 @@ export default function Home() {
     <div>
       {/* <HeroSlider/> */}
       {/* <HeroSection/> */}
-      <ProductsSlider/>
+      {/* <ProductsSlider/> */}
+      <LRWomen/>
       <ServiceBoxes/>
       <CategoryGrid/>
       <FeaturedProductsDetail/>
