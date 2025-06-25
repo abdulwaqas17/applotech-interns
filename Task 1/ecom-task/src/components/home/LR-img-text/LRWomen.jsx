@@ -74,19 +74,19 @@ import Image from 'next/image';
 
 const LRWomen = () => {
   return (
-    <section className="bg-gray-900 text-white px-4 sm:px-6 lg:px-8 h-auto lg:h-[520px] overflow-hidden">
-      <div className="w-full flex flex-col lg:flex-row items-center lg:items-start gap-8">
+    <section className="bg-[#1f2328] text-white px-4 sm:px-6 lg:px-8 h-auto lg:h-[520px] overflow-hidden">
+      <div className="w-full flex flex-col lg:flex-row items-center lg:items-start md:gap-8">
         {/* Left Content Area - unchanged for laptop */}
-        <div className="flex-1 w-full lg:w-[300px] flex flex-col items-center lg:items-start text-center lg:text-left lg:pl-[50px] lg:pr-[170px] py-12 lg:py-[130px]">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-2">
+        <div className="flex-1 w-full lg:w-[300px] flex flex-col items-center text-center lg:text-left lg:pl-[50px] lg:pr-[170px] py-12 lg:py-[130px]">
+          <h2 className="text-3xl sm:text-4xl font-bold mb-2">
             BEAUTIFUL SHORT 
           </h2>
           <h3 className="font-serif italic text-2xl sm:text-3xl lg:text-4xl text-center lg:text-left">
             Summer Dress
           </h3>
-          <p className="text-base sm:text-lg lg:text-xl mt-5 mb-8 text-center lg:text-left leading-relaxed max-w-md mx-auto lg:mx-0">
-            Elegantly breezy, this short summer dress<br className="hidden sm:block" />
-            a canvas of effortless charm under the sun's<br className="hidden sm:block" />
+          <p className="text-base sm:text-lg lg:text-xl mt-5 mb-8 text-center leading-relaxed max-w-md md:w-[55%] lg:w-[70%] mx-auto lg:mx-0">
+            Elegantly breezy, this short summer dress
+            a canvas of effortless charm under the sun's
             golden embrace.
           </p>
           <button className="bg-red-600 hover:bg-red-700 text-white font-semibold py-3 px-8 rounded-md transition duration-300 ease-in-out">
@@ -99,7 +99,7 @@ const LRWomen = () => {
           {/* Main Image */}
           <div className="lg:w-[400px] lg:absolute lg:top-[-70px] lg:left-[150px] h-full lg:h-[800px]">
             <Image
-              src="/images/women.jpeg"
+              src="/images/rightwomen.png"
               alt="Beautiful Short Summer Dress"
               layout="fill"
               objectFit="cover"
@@ -109,28 +109,28 @@ const LRWomen = () => {
 
           {/* Smaller Images - shown only on tablet and desktop */}
           <div className="hidden sm:flex justify-center w-full lg:w-auto">
-            <div className="absolute top-[25%] left-[15%] sm:top-[20%] sm:left-[20%] lg:top-[30px] lg:left-[-190px] w-20 h-20 sm:w-28 sm:h-28 lg:w-46 lg:h-36 rotate-[-5deg] shadow-lg border-4 lg:border-8 border-white">
+            <div className="absolute top-[25%] left-[15%] sm:top-[-50px] sm:left-[24%] lg:top-[50px] lg:left-[-190px] w-20 h-20 sm:w-38 sm:h-28 lg:w-46 lg:h-36 rotate-[-5deg] shadow-lg border-4 lg:border-8 border-white">
               <Image
-                src="/images/women.jpeg"
+                src="/images/women4.jpeg"
                 alt="Dress detail 2"
                 layout="fill"
-                objectFit="cover"
+                 className="object-cover object-top"
               />
             </div>
-            <div className="absolute top-[55%] left-[5%] sm:top-[50%] sm:left-[10%] lg:top-[200px] lg:left-[-50px] w-24 h-24 sm:w-32 sm:h-32 lg:w-45 lg:h-35 rotate-[-5deg] shadow-lg border-4 lg:border-8 border-white">
+            <div className="absolute top-[55%] left-[5%] sm:top-[-320px] sm:left-[0%] lg:top-[220px] lg:left-[-50px] w-24 h-24 sm:w-38 sm:h-32 lg:w-45 lg:h-35 rotate-[-5deg] shadow-lg border-4 lg:border-8 border-white">
               <Image
-                src="/images/women1.jpeg"
+                src="/images/women3.jpeg"
                 alt="Dress detail 1"
                 layout="fill"
-                objectFit="cover"
+                  className="object-cover object-top"
               />
             </div>
-            <div className="absolute bottom-[5%] right-[5%] sm:bottom-[10%] sm:right-[10%] lg:top-[330px] lg:left-[-270px] w-24 h-24 sm:w-32 sm:h-32 lg:w-44 lg:h-34 rotate-[-5deg] shadow-lg border-4 lg:border-8 border-white">
+            <div className="absolute bottom-[5%] right-[5%] sm:bottom-[100px] sm:right-[-50px] lg:top-[350px] lg:left-[-270px] w-24 h-24 sm:w-32 sm:h-32 lg:w-44 lg:h-34 lg:rotate-[-5deg] rotate-[5deg] shadow-lg border-4 lg:border-8 border-white">
               <Image
-                src="/images/women.jpeg"
+                src="/images/women2.jpeg"
                 alt="Dress detail 3"
                 layout="fill"
-                objectFit="cover"
+                 className="object-cover object-center"
               />
             </div>
           </div>

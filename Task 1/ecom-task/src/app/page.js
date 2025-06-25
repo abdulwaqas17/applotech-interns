@@ -5,8 +5,10 @@ import TopFooter from "@/components/commons/footer/TopFooter";
 import CategoryGrid from "@/components/home/category/CategoryGrid";
 import FeaturedProductsDetail from "@/components/home/featured-products/FeaturedProductsDetail";
 import FeaturedProductsSection from "@/components/home/featured-products/FeaturedProductsSection";
+import LRMan from "@/components/home/LR-img-text/LRMan";
 import LRWomen from "@/components/home/LR-img-text/LRWomen";
 import ServiceBoxes from "@/components/home/service/ServiceBoxes";
+import CircularSlider from "@/components/home/slider/CirculerSlider";
 import HeroSection from "@/components/home/slider/HeroSection";
 import HeroSlider from "@/components/home/slider/HeroSlider";
 import ProductsSlider from "@/components/products/slider/ProductsSlider";
@@ -18,7 +20,9 @@ export default function Home() {
       {/* <HeroSlider/> */}
       {/* <HeroSection/> */}
       {/* <ProductsSlider/> */}
-      <LRWomen/>
+      <CircularSlider/>
+      {/* <LRWomen/>
+      <LRMan/>
       <ServiceBoxes/>
       <CategoryGrid/>
       <FeaturedProductsDetail/>
@@ -29,7 +33,7 @@ export default function Home() {
       </div>
       <TopFooter/>
       <MidFooter/>
-      <BottomFooter/>
+      <BottomFooter/> */}
     </div>
   );
 }
