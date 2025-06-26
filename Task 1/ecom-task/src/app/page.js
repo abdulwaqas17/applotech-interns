@@ -12,17 +12,22 @@ import CircularSlider from "@/components/home/slider/CirculerSlider";
 import HeroSection from "@/components/home/slider/HeroSection";
 import HeroSlider from "@/components/home/slider/HeroSlider";
 import ProductsSlider from "@/components/products/slider/ProductsSlider";
+import { useState } from "react";
+import Loading from "./loading";
 
 
 export default function Home() {
+   const [isLoading, setIsLoading] = useState(true);
+
   return (
     <div>
-      {/* <HeroSlider/> */}
-      {/* <HeroSection/> */}
-      {/* <ProductsSlider/> */}
+      {isLoading && <Loading />}
+      
       <CircularSlider/>
-      {/* <LRWomen/>
+       <LRWomen/>
       <LRMan/>
+      <HeroSection/>
+      <ProductsSlider/>
       <ServiceBoxes/>
       <CategoryGrid/>
       <FeaturedProductsDetail/>
@@ -33,7 +38,7 @@ export default function Home() {
       </div>
       <TopFooter/>
       <MidFooter/>
-      <BottomFooter/> */}
+      <BottomFooter/> 
     </div>
   );
 }
