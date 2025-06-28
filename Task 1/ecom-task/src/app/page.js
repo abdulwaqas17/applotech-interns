@@ -15,6 +15,8 @@ import ProductsSlider from "@/components/products/slider/ProductsSlider";
 import { useState } from "react";
 import Loading from "./loading";
 import CategorySection from "@/components/home/category/CategorySection";
+import UltimateSale from "@/components/home/others/UltimateSale";
+import AnimatedHeadline from "@/components/home/others/AnimatedHeadline";
 
 
 export default function Home() {
@@ -25,7 +27,14 @@ export default function Home() {
       {/* {isLoading && <Loading />} */}
       
       <HeroSection/>
+      <AnimatedHeadline/>
       <CategorySection/>
+      <UltimateSale/>
+      <FeaturedProductsSection/>
+       <div className="p-8">
+        <h2 className="text-2xl font-bold mt-8">Explore Our Products</h2>
+        <p className="mt-4">This is where your product listings would go.</p>
+      </div>
        <LRWomen/>
       <CircularSlider/>
       <LRMan/>
@@ -33,11 +42,6 @@ export default function Home() {
       {/* <ServiceBoxes/> */}
       {/* <CategoryGrid/> */}
       {/* <FeaturedProductsDetail/> */}
-      {/* <FeaturedProductsSection/> */}
-       <div className="p-8">
-        <h2 className="text-2xl font-bold mt-8">Explore Our Products</h2>
-        <p className="mt-4">This is where your product listings would go.</p>
-      </div>
       <TopFooter/>
       <MidFooter/>
       <BottomFooter/> 

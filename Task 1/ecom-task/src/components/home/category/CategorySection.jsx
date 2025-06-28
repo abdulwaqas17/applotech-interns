@@ -3,6 +3,7 @@ import { FaArrowRight } from "react-icons/fa";
 import { GoNorthStar } from "react-icons/go";
 import Link from "next/link";
 import Image from "next/image";
+import SectionBar from "../bar/SectionBar";
 
 export default function CategorySection() {
   // Category data array with original image paths
@@ -52,54 +53,35 @@ export default function CategorySection() {
   ];
 
   return (
-    <section className="pt-20 pb-5 md:pt-24 md:pb-5 lg:pt-32 lg:pb-5">
-      <div className="container mx-auto px-4">
-        <div className="flex flex-wrap items-end mb-12">
-          {/* Section Title - Left Column */}
-          <div className="w-full md:w-8/12">
+    <section className="mt-[60px] lg:my-[100px] px-[20px] md:px-[30px]">
+      <div className="container mx-auto">
+        {/* Section Bar  */}
+        <SectionBar
+          category="Categories"
+          heading="Browse Top Category"
+          option={
             <div
-              className="text-center md:text-left"
-              data-aos="fade-right"
-              data-aos-delay="10"
-              data-aos-duration="1000"
-            >
-              <div className="inline-flex items-center mb-2">
-                {/* <FaSparkles className="text-yellow-500 mr-2" /> */}
-                <GoNorthStar />
-                <span className=" font-semibold text-red-600 ml-2">
-                  Categories
-                </span>
-              </div>
-              <h2 className="text-2xl md:text-4xl font-bold text-gray-800">
-                Browse Top Category
-              </h2>
-            </div>
-          </div>
-
-          {/* View All Button - Right Column */}
-          <div className="w-full md:w-4/12 md:mt-0 mt-[30px] md:mb-0 mb-[50px] ">
-            <div
-              className="text-center md:text-right"
+              className="text-center flex md:text-right"
               data-aos="fade-left"
               data-aos-delay="15"
               data-aos-duration="1200"
             >
               <Link
                 href="/shops"
-                className="inline-block rounded-[25px] hover:bg-red-600 bg-black text-white font-medium py-[12px] px-[28px] transition duration-300"
+                className="inline-block rounded-[25px] hover:bg-red-600 bg-black text-white font-medium py-[10px] px-[18px] lg:py-[12px] lg:px-[28px] transition duration-300"
               >
                 View All <FaArrowRight className="inline ml-1" />
               </Link>
             </div>
-          </div>
-        </div>
+          }
+        />
 
         {/* Category Grid */}
         <div className="pt-10 md:pt-20">
           <div className="flex flex-wrap justify-center md:justify-between w-full">
             {categories.map((category) => (
               <div
-                className="relative category-item group h-[190px] flex items-end justify-center pb-[20px]  mb-28 md:mb-28 lg:mb-32 xl:mb-44 aos-init aos-animate bg-white hover:bg-black transition-all duration-700 w-[80%] md:w-[30%] lg:w-[14%] "
+                className="relative category-item group h-[190px] flex items-end justify-center pb-[20px] aos-init aos-animate bg-white hover:bg-black transition-all duration-700 w-[80%] md:w-[30%] lg:w-[14%] mb-[120px] lg:mb-0"
                 data-aos="fade-up"
                 data-aos-delay="35"
                 data-aos-duration="1800"
