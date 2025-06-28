@@ -14,24 +14,26 @@ import HeroSlider from "@/components/home/slider/HeroSlider";
 import ProductsSlider from "@/components/products/slider/ProductsSlider";
 import { useState } from "react";
 import Loading from "./loading";
+import CategorySection from "@/components/home/category/CategorySection";
 
 
 export default function Home() {
-   const [isLoading, setIsLoading] = useState(true);
+  //  const [isLoading, setIsLoading] = useState(true);
 
   return (
-    <div>
-      {isLoading && <Loading />}
+    <div className="bg-gray-50">
+      {/* {isLoading && <Loading />} */}
       
-      <CircularSlider/>
-       <LRWomen/>
-      <LRMan/>
       <HeroSection/>
-      <ProductsSlider/>
-      <ServiceBoxes/>
-      <CategoryGrid/>
-      <FeaturedProductsDetail/>
-      <FeaturedProductsSection/>
+      <CategorySection/>
+       <LRWomen/>
+      <CircularSlider/>
+      <LRMan/>
+      {/* <ProductsSlider/> */}
+      {/* <ServiceBoxes/> */}
+      {/* <CategoryGrid/> */}
+      {/* <FeaturedProductsDetail/> */}
+      {/* <FeaturedProductsSection/> */}
        <div className="p-8">
         <h2 className="text-2xl font-bold mt-8">Explore Our Products</h2>
         <p className="mt-4">This is where your product listings would go.</p>
