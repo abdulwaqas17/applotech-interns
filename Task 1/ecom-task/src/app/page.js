@@ -18,6 +18,7 @@ import CategorySection from "@/components/home/category/CategorySection";
 import UltimateSale from "@/components/home/others/UltimateSale";
 import AnimatedHeadline from "@/components/home/others/AnimatedHeadline";
 import DiscountSection from "@/components/home/others/DiscountSection";
+import TrendingProducts from "@/components/home/trending-products/TrendingProducts";
 
 
 export default function Home() {
@@ -34,6 +35,7 @@ export default function Home() {
       <FeaturedProductsSection/>
       <AnimatedHeadline/>
       <DiscountSection/>
+      <TrendingProducts/>
        <div className="p-8">
         <h2 className="text-2xl font-bold mt-8">Explore Our Products</h2>
         <p className="mt-4">This is where your product listings would go.</p>
