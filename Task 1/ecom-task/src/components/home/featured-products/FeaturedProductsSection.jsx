@@ -269,13 +269,13 @@ import SectionBar from "../bar/SectionBar";
 const FeaturedProductsSection = () => {
   const [activeTab, setActiveTab] = useState("cat1");
   return (
-    <div className="px-[20px] md:px-[30px] my-[60px] lg:my-[100px]">
+    <div className="px-[20px] md:px-[30px] mt-[60px] mb-[20px] lg:mt-[100px] lg:mb-[60px]">
 
      <div className="container mx-auto">
        {/* Section Bar  */}
       <SectionBar category="Feature Products" heading="Our Feature Products" option={
          <ul
-            className="nav nav-tabs w-[100%] lg:w-[65%] flex justify-center border rounded-[25px] p-[6px] border-black "
+            className="nav nav-tabs w-[100%] lg:w-[65%] flex justify-center border rounded-[25px] p-[6px] border-black"
             role="tablist"
           >
             <li className="mr-1">

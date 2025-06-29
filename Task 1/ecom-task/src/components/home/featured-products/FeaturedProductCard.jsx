@@ -135,7 +135,7 @@ export default function ProductCard() {
   return (
     <div className="w-full md:w-[33%] lg:w-[24%] px-2">
       <div
-        className="product-item mb-10 relative overflow-hidden group"
+        className="product-item mb-[40px] relative overflow-hidden group"
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
