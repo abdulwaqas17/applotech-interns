@@ -3,7 +3,6 @@ import BottomFooter from "@/components/commons/footer/BottomFooter";
 import MidFooter from "@/components/commons/footer/MidFooter";
 import TopFooter from "@/components/commons/footer/TopFooter";
 import CategoryGrid from "@/components/home/category/CategoryGrid";
-import FeaturedProductsDetail from "@/components/home/featured-products/FeaturedProductsDetail";
 import FeaturedProductsSection from "@/components/home/featured-products/FeaturedProductsSection";
 import LRMan from "@/components/home/LR-img-text/LRMan";
 import LRWomen from "@/components/home/LR-img-text/LRWomen";
@@ -19,6 +18,7 @@ import UltimateSale from "@/components/home/others/UltimateSale";
 import AnimatedHeadline from "@/components/home/others/AnimatedHeadline";
 import DiscountSection from "@/components/home/others/DiscountSection";
 import TrendingProducts from "@/components/home/trending-products/TrendingProducts";
+import TestimonialSection from "@/components/home/testimonials/TestinomailSection";
 
 
 export default function Home() {
@@ -36,13 +36,14 @@ export default function Home() {
       <AnimatedHeadline/>
       <DiscountSection/>
       <TrendingProducts/>
-       <div className="p-8">
+      <TestimonialSection/>
+       {/* <div className="p-8">
         <h2 className="text-2xl font-bold mt-8">Explore Our Products</h2>
         <p className="mt-4">This is where your product listings would go.</p>
       </div>
        <LRWomen/>
       <CircularSlider/>
-      <LRMan/>
+      <LRMan/> */}
       {/* <ProductsSlider/> */}
       {/* <ServiceBoxes/> */}
       {/* <CategoryGrid/> */}

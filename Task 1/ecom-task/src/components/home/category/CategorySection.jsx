@@ -81,6 +81,7 @@ export default function CategorySection() {
           <div className="flex flex-wrap justify-center md:justify-between w-full">
             {categories.map((category) => (
               <div
+              key={category.name}
                 className="relative category-item group h-[190px] flex items-end justify-center pb-[20px] aos-init aos-animate bg-white hover:bg-black transition-all duration-700 w-[80%] md:w-[30%] lg:w-[14%] mb-[120px] lg:mb-0"
                 data-aos="fade-up"
                 data-aos-delay="35"

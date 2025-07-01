@@ -2,7 +2,7 @@
 import { FiChevronLeft, FiChevronRight } from 'react-icons/fi'
 import { FaArrowLeftLong, FaArrowRightLong } from "react-icons/fa6";
 
-export default function Arrows() {
+export default function Arrows({onPrev,onNext}) {
   return (
     <div 
       className="trending-product-arrows flex items-center justify-center gap-[40px] aos-init aos-animate"
@@ -11,6 +11,7 @@ export default function Arrows() {
     >
       {/* Previous Arrow */}
       <button 
+      onClick={()=> onPrev()}
         className="prev slick-arrow relative w-[50px] h-[50px] border border-black rounded-full shadow-md flex items-center justify-center group cursor-pointer"
         aria-label="Previous"
       >
@@ -25,6 +26,7 @@ export default function Arrows() {
       
       {/* Next Arrow */}
      <button 
+      onClick={()=> onNext()}
         className="prev slick-arrow relative w-[50px] h-[50px] border border-black rounded-full shadow-md flex items-center justify-center group cursor-pointer"
         aria-label="Previous"
       >
